@@ -13,8 +13,8 @@ whurl = os.getenv('whurl')
 LOG_FILE = "/var/log/auth.log"
 print(f'running...')
 
-# Words to search for in the log file
-SEARCH_WORDS = ['Accepted', 'Disconnected', 'systemd-logind', 'failed', 'failures']
+# Words to search for in the log file (all lowercase)
+SEARCH_WORDS = ['accepted', 'disconnected', 'systemd-logind', 'failed', 'failures', 'password']
 
 # Keep track of the last position in the file
 last_position = os.path.getsize(LOG_FILE)
