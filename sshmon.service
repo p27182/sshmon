@@ -1,0 +1,12 @@
+[Unit]
+Description=ssh monitor to push auth log output to discord webhook
+After=multi-user.target
+After=networking.service
+
+[Service]
+Type=simple
+User=user
+ExecStart=/usr/bin/python3 /home/user/sshmon/sshmon.py
+
+[Install]
+WantedBy=default.target
