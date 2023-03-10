@@ -3,7 +3,9 @@
 
 mkdir sshmon
 cd sshmon
-pip install discord-webhook
+sudo apt install python3-pip
+pip3 install load_dotenv
+pip3 install discord-webhook
 wget https://raw.githubusercontent.com/p27182/monitoring/main/sshmon.py
 wget https://raw.githubusercontent.com/p27182/monitoring/main/sshmon.service
 wget https://raw.githubusercontent.com/p27182/monitoring/main/.env
