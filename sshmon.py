@@ -1,4 +1,5 @@
 #must have webhook url in .env file as "whurl=https://webhookyboi.com/burblgurgle"
+# also requires https://pypi.org/project/discord-webhook/
 
 import os
 import asyncio
