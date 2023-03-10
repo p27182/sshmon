@@ -1,6 +1,8 @@
 #install sshmon
 # do not run as sudo!
 
+mkdir sshmon
+cd sshmon
 pip install discord-webhook
 wget https://raw.githubusercontent.com/p27182/monitoring/main/sshmon.py
 wget https://raw.githubusercontent.com/p27182/monitoring/main/sshmon.service
