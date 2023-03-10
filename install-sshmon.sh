@@ -12,4 +12,6 @@ wget https://raw.githubusercontent.com/p27182/monitoring/main/.env
 sudo mv sshmon.service /lib/systemd/system/sshmon.service
 sudo systemctl daemon-reload
 sudo systemctl enable sshmon
-sudo systemctl start sshmon
+echo "Add the webhook url to .env file and start the sshmon service"
+pause
+#sudo systemctl start sshmon
